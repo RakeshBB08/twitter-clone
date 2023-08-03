@@ -1,0 +1,54 @@
+body {
+  background-color: #0099ff;
+  font-family: ui-rounded;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.loginContainer {
+  padding: 20px;
+  width: 80%;
+  /* height: 80vh; */
+  max-width: 500px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="email"],
+input[type="password"] {
+  outline: none;
+  margin-bottom: 20px;
+  padding: 10px, 10px;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  background-color: #f2f2f2;
+}
+
+input[type="submit"] {
+  background-color: #0099ff;
+  font-size: 24px;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+.loginContainer a {
+  font-size: 22px;
+}

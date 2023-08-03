@@ -1,0 +1,12 @@
+//- pug is extention of the template files
+//- indentations are seviour to pug file templates
+//- +sign is used to inject a function
+extend layouts/main-layout.pug
+block content
+    +createPostForm(userLoggedIn)
+    .postsContainer
+    +createPostModal(userLoggedIn)
+
+
+block scripts
+    script(src="/js/home.js") 
