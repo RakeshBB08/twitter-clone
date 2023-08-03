@@ -71,10 +71,6 @@ nav a {
   position: relative;
 }
 
-nav a.blue {
-  color: var(--blue);
-}
-
 nav a:hover {
   background-color: var(--buttonHoverBG);
   color: var(--blue);
