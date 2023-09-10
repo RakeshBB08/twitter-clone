@@ -42,7 +42,6 @@ router.get("/", async (req, res, next) => {
     .populate("latestMessage")
     .sort({ updatedAt: -1 })
     .then(async (results) => {
-      console.log(results);
       if (
         req.query.unreadOnly !== undefined &&
         req.query.unreadOnly == "true"
@@ -53,7 +52,6 @@ router.get("/", async (req, res, next) => {
             !r.latestMessage.readBy.includes(req.session.user._id)
           );
         });
-        console.log(results);
       }
 
       results = await User.populate(results, { path: "latestMessage.sender" });
